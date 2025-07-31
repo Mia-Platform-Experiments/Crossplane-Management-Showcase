@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - ../../configuration
   - azure-provider-network.provider.crd.yml
+  - azure-default-providerconfig.providerconfig.crd.yml
