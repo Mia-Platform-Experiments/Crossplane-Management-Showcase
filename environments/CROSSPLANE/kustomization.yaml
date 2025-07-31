@@ -4,3 +4,4 @@ resources:
   - ../../configuration
   - azure-provider-network.provider.crd.yml
   - azure-default-providerconfig.providerconfig.crd.yml
+  - azure-default-providerconfig-2.providerconfig.crd.yml
