@@ -6,3 +6,9 @@ secrets:
       password: "{{NEXUS_TOKEN}}"
       email: "operations@mia-platform.eu"
       server: "{{NEXUS_URL}}"
+  - name: "azure-providerconfig-credentials"
+    when: "always"
+    data:
+      - from: "literal"
+        key: "creds"
+        value: "{\"clientId\":\"{{AZURE_CLIENT_ID}}\",\"clientSecret\":\"{{AZURE_CLIENT_SECRET}}\",\"tenantId\":\"{{AZURE_TENANT_ID}}\",\"subscriptionId\":\"{{AZURE_SUBSCRIPTION_ID}}\"}"
